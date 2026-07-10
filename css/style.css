@@ -59,9 +59,8 @@ img {
 }
 
 .header li + li {
-    margin-left: 10px;
+    margin-left: 20px;
 }
-
 
 
 .logo {
@@ -70,7 +69,30 @@ img {
 
 .sidenav {
      grid-area: sidenav;
+     background: #fafbfc;
+     padding: 30px;
 }
+
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(44,44,44,.15);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.sidenav li a:hover {
+    transform: scale(1.1);
+    background: #B07DFB;
+    box-shadow: 5px 5px 15px rgba(44,44,44,.3);
+}
+
+
+
 .content {
      grid-area: content;
 }
